@@ -8,3 +8,9 @@ from  django.http import HttpResponse
 class IndexView(View):
     def get(self,request):
         return render(request, 'bartender/index.html')
+
+
+# Token View
+class TokenView(View):
+    def get(self,request):
+        return render(request,'bartender/token.html')
